@@ -1,35 +1,69 @@
-# 목적
+# Codeigniter를 이용한 Restful API 개발
 
-Docker, Docker Compose를 이용하여 Apache HTTPD, PHP, MySQL 개발 및 실행
+## 내용
 
-## 준비
+작품(=상품) 상세 페이지를 구성하는 데이터를 출력하는 Restful API를 개발하는 것이 목적
 
-* OS에 맞는 [docker, docker-compose 설치](https://docs.docker.com/install/)
-* 이 저장소를 fork 또는 파일을 다운로드.
+### 작품 상세 참고 URI
 
-## MySQL 계정 수정
+* https://www.idus.com/w/product/7dbe1c8b-41af-460c-ad88-b791a0552d28
+* https://www.idus.com/w/product/074782b0-7a5e-4eff-960f-117871ec7f24
+* https://www.idus.com/w/product/12b83a5e-e621-4de9-aef6-61b0d3e6104b
+* https://www.idus.com/w/product/2b89cd03-897d-47cd-8cfc-5e92f0b4329f
 
-* [docker-compose.yml](./docker-compose.yml) 파일을 열어 계정과 패스워드를 수정한다.
-* 기본 접속 포트는 `3306`으로 되어 있다.
-* 기본 접속 포트를 다른 프로그램에서 이미 사용 중인 경우 ports 항목을 수정한다.
-* git에 수정한 계정과 패스워드는 commit하지 않도록 주의한다.
+작품이 판매 종료되거나 삭제되는 경우가 있습니다. 더 많은 작품은 https://www.idus.com 를 방문하여 보실 수 있습니다. 
 
+## 개발에 사용할 소프트웨어
 
-## 프로젝트 실행과 종료
+* Apache HTTPD
+* PHP
+* Codeigniter
+* MySQL
+* Git
+* Docker
+* Docker Compose
 
-CLI 환경에서 아래 명령으로 실행 및 종료할 수 있다.
+## 요구 사항
 
-프로젝트 실행
+* 소프트웨어의 버전은 어떤 버전을 사용해도 관계 없음.
+* 모르는 기술은 인터넷 검색 또는 기술 서적 등을 통해 사용 방법을 터득.
+* 개발 시간이 부족할 경우 작품 상세 내용을 모두 출력할 필요는 없으며 중요하다고 생각되는 것을 우선하여 출력.
+* API 출력 형식은 Json으로 출력.
+* 개발 결과물은 github, bitbucket, gitlab 등의 링크로 제출.
 
-```bash
-docker-compose up
-```
+## 필수 출력 항목
 
-`docker-compose up`을 하게 되면 CLI 상에 다양한 로그가 출력된다. 이 상태에서 `Ctrl + C`를 누르면 프로젝트를 멈출 수 있다. 
+* 작품명(상품명)
+* 작품 이미지 URI 리스트
+* 작가명(판매자명)
+* 작가 프로필 이미지 URI
+* 작품 가격
+* 작품 할인 가격
+* 작품 할인율
+* 작품 정보
+* 카테고리명
+* 키워드 리스트
+* 구매 후기 리스트
+    * 구매자명
+    * 구매자 프로필 이미지 URI
+    * 작성일자
+    * 별점
+    * 구매 후기 내용
 
-프로젝트 종료
+## 추가(옵션) 출력 항목
 
-```bash
-docker-compose down
-```
+아래 항목은 반드시 출력하지 않아도 되지만 출력할 경우 이에 대한 가산점이 있습니다.
 
+* 댓글 리스트
+* 판매 중인 다른 작품 리스트
+* 그 외 OOO(카테고리) 인기 작품 리스트
+
+## 예외
+
+개발에 사용할 소프트웨어를 사용하여 개발하는 과정에서 어려움이 있는 경우 해당 기술을 제외하고 완성해도 됩니다.
+
+## 개발환경 구성 : [링크](./docs/dev_env_setting.md)
+
+## 문의
+
+궁금한 점이 있다면 ziplus4@backpac.kr 로 연락주시기 바랍니다.
