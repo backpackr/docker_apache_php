@@ -11,7 +11,7 @@
 * https://www.idus.com/w/product/12b83a5e-e621-4de9-aef6-61b0d3e6104b
 * https://www.idus.com/w/product/2b89cd03-897d-47cd-8cfc-5e92f0b4329f
 
-작품이 판매 종료되거나 삭제되는 경우가 있습니다. 더 많은 작품은 https://www.idus.com를 방문하여 보실 수 있습니다.
+작품이 판매 종료되거나 삭제되는 경우가 있습니다. 더 많은 작품은 <https://www.idus.com>를 방문하여 보실 수 있습니다.
 
 작품 중 하나를 선택하여 개발하고 어떤 작품을 대상으로 하였는지 URI를 같이 첨부해 주시기 바랍니다. 
 
@@ -71,7 +71,7 @@
 ## FAQ
 
 * Q: 작품(상품) 데이터는 어디서 얻을 수 있나요?
-    * A: https://www.idus.com의 작품 중 일부를 사용하시면 됩니다.
+    * A: <https://www.idus.com>의 작품 중 일부를 사용하시면 됩니다.
 * Q: 개발 환경 설정은 어떻게 하나요?
     * A: [링크](./docs/dev_env_setting.md)로 이동하여 볼 수 있습니다.
 * Q: 데이터베이스 테이블 디자인은 어떻게 하나요?
